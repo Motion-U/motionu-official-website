@@ -10,6 +10,8 @@ import { FaBookReader } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa6";
 import CollaboratorLogo from "./components/CollaboratorLogo";
+import { Dialog } from "./components/material";
+import Alert from "./components/Alert";
 
 export default function page() {
   return (
@@ -116,14 +118,36 @@ export default function page() {
             Our collaborators
           </h2>
           <div className="flex flex-col items-center justify-center  md:lg:flex-row    gap-9">
-            <CollaboratorLogo image={"/images/iium.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/kict.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/cita.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/mulhaq.png"} width={100} height={100}></CollaboratorLogo>
             <CollaboratorLogo
-              image={"/images/ictss_logo.jpg"} width={100} height={100}
+              image={"/images/iium.png"}
+              width={100}
+              height={100}
             ></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/deta.png"} width={130} height={130}></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/kict.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/cita.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/mulhaq.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/ictss_logo.jpg"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/deta.png"}
+              width={130}
+              height={130}
+            ></CollaboratorLogo>
           </div>
         </section>
       </main>

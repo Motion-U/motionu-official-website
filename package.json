@@ -11,6 +11,8 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.19.4",
     "@contentful/rich-text-types": "^16.3.4",
+    "@material-tailwind/react": "^2.1.10",
+    "@radix-ui/react-dialog": "^1.1.2",
     "buttercms": "^2.0.0",
     "contentful": "^10.6.22",
     "next": "14.1.0",
@@ -21,8 +23,11 @@
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
+    "@types/node": "22.7.4",
+    "@types/react": "18.3.10",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.6.2"
   }
 }
