@@ -34,8 +34,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <Analytics>
-      <html lang="en">
+    <html lang="en">
+        <Analytics/>
         <body
           className={`${inter.className} overflow-x-hidden relative max-w-[100vw]`}
         >
@@ -46,6 +46,6 @@ export default function RootLayout({ children }) {
           <FooterNew />
         </body>
       </html>
-    </Analytics>
+    
   );
 }
