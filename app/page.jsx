@@ -73,7 +73,7 @@ export default function page() {
             <div className="text-center">
               <Heading text={"Featured Projects"}></Heading>{" "}
             </div>
-            <div className="grid grid-cols-3 gap-10 p-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-16">
               <ProjectPostCard
                 title={"Mallam Chat"}
                 description={
