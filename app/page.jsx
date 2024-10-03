@@ -80,7 +80,7 @@ export default function page() {
                   "The easiest way to chat with Malaysian AI. Mallam is the ChatGPT for Malaysian where it can understand Bahasa Melayu and respond it also in Bahasa Melayu"
                 }
                 image={"/images/mallam.png"}
-                link={"https://mallam.chat/"}
+                link={"https://beta.mallam.chat/"}
                 credit={"Quddus"}
               />
                <ProjectPostCard
