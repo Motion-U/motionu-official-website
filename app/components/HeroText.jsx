@@ -12,7 +12,7 @@ export default function HeroText() {
       <p className="text-lg text-sky-500 font-semibold my-9 lg:text-2xl">
         Empowering Innovators, Shaping Futures
       </p>
-      <PrettyButton text={"Register Now"} link="https://docs.google.com/forms/d/e/1FAIpQLSeyWcBSC_SNrjW5dA7J3dNYtZlb6NRC0YiXR3aN1LiVDfsbMw/viewform?usp=sf_link"></PrettyButton>
+      {/* <PrettyButton text={"Register Now"} link="https://docs.google.com/forms/d/e/1FAIpQLSeyWcBSC_SNrjW5dA7J3dNYtZlb6NRC0YiXR3aN1LiVDfsbMw/viewform?usp=sf_link"></PrettyButton> */}
     </div>
   );
 }

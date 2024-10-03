@@ -191,6 +191,31 @@ export default function page() {
               height={100}
             ></CollaboratorLogo>
             <CollaboratorLogo
+              image={"/images/iium.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/kict.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/cita.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/mulhaq.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/ictss_logo.jpg"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
               image={"/images/deta.png"}
               width={130}
               height={130}
