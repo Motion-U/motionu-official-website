@@ -22,17 +22,9 @@ export default async function projectsPage() {
                 ventures.
             </p>
             <div className="grid grid-cols-2 gap-4 gap-y-10 mx-60">
-                {project.map((entry) => (
-                            <ProjectPostCard
-                                key={entry.sys.id}
-                                title={entry.fields.title}
-                                date={entry.fields.date}
-                                image={entry.fields.image.fields.file.url}
-                                link={entry.fields.link}
-                                description={entry.fields.description}
-                            ></ProjectPostCard>
-                        )
-                    )}
+            <ProjectPostCard />
+            <ProjectPostCard />
+            <ProjectPostCard />
             </div>
         </section>
     );

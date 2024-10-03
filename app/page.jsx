@@ -4,12 +4,12 @@ import ActivityCard from "./components/ActivityCard";
 import { FaCampground } from "react-icons/fa";
 import { FaBullhorn } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
-import Image from "next/image";
 import MembershipPerkCard from "./components/MembershipPerkCard";
 import { FaBookReader } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa6";
 import CollaboratorLogo from "./components/CollaboratorLogo";
+import ProjectPostCard from "./components/ProjectPostCard";
 
 export default function page() {
   return (
@@ -68,6 +68,41 @@ export default function page() {
             </div>
           </div>
         </section>
+        <section className="mb-5 text-sky-400 py-10">
+          <div className="">
+            <div className="text-center">
+              <Heading text={"Featured Projects"}></Heading>{" "}
+            </div>
+            <div className="grid grid-cols-3 gap-10 p-16">
+              <ProjectPostCard
+                title={"Mallam Chat"}
+                description={
+                  "The easiest way to chat with Malaysian AI. Mallam is the ChatGPT for Malaysian where it can understand Bahasa Melayu and respond it also in Bahasa Melayu"
+                }
+                image={"/images/mallam.png"}
+                link={"https://mallam.chat/"}
+              />
+              <ProjectPostCard
+                title={
+                  "ProReg : Make it Easier To Create Your Course Timetable"
+                }
+                image={"/images/proreg.png"}
+                description={
+                  "ProReg is an application that can help IIUM students to schedule their courses timetable. Available both in web and mobile application"
+                }
+                link={"https://proreg.vercel.app/"}
+              />
+              <ProjectPostCard
+                title={"IIUM Schedule : Schedule Your Timetable Seamlessly"}
+                description={
+                  "IIUM Schedule is an application that can help IIUM students to schedule their courses timetable"
+                }
+                image={"/images/iiumschedule.png"}
+                link={"https://iiumschedule.vercel.app/"}
+              />
+            </div>
+          </div>
+        </section>
         <section className="bg-sky-400 py-10">
           <div className="mb-5 text-center">
             <Heading text={"Membership perks"} lightFont={true}></Heading>
@@ -116,14 +151,36 @@ export default function page() {
             Our collaborators
           </h2>
           <div className="flex flex-col items-center justify-center  md:lg:flex-row    gap-9">
-            <CollaboratorLogo image={"/images/iium.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/kict.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/cita.png"} width={100} height={100}></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/mulhaq.png"} width={100} height={100}></CollaboratorLogo>
             <CollaboratorLogo
-              image={"/images/ictss_logo.jpg"} width={100} height={100}
+              image={"/images/iium.png"}
+              width={100}
+              height={100}
             ></CollaboratorLogo>
-            <CollaboratorLogo image={"/images/deta.png"} width={130} height={130}></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/kict.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/cita.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/mulhaq.png"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/ictss_logo.jpg"}
+              width={100}
+              height={100}
+            ></CollaboratorLogo>
+            <CollaboratorLogo
+              image={"/images/deta.png"}
+              width={130}
+              height={130}
+            ></CollaboratorLogo>
           </div>
         </section>
       </main>
