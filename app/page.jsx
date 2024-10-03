@@ -83,6 +83,15 @@ export default function page() {
                 link={"https://mallam.chat/"}
                 credit={"Quddus"}
               />
+               <ProjectPostCard
+                title={"Simplified iMa'luum : iMa'luum, But More Epic!"}
+                description={
+                  "Tired of old-design iMa'luum? Try the new unofficial iMa'luum that looks much cooler, and much more feature!"
+                }
+                image={"/images/imaalum.png"}
+                link={"https://imaluum.nrmnqdds.com/"}
+                credit={"Quddus"}
+              />
               <ProjectPostCard
                 title={
                   "ProReg : Make it Easier To Create Your Course Timetable"
