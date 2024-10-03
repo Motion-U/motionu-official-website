@@ -6,6 +6,7 @@ export default function ProjectPostCard({
   date,
   image,
   link,
+  credit,
   description,
 }) {
   return (
@@ -19,6 +20,7 @@ export default function ProjectPostCard({
           <div>
             <div className="flex justify-between items-center pt-5 ">
               <div>{date}</div>
+              <div>Credit to : {credit}</div>
               <div className="flex items-center">
                 <div>More&nbsp;</div>
                 <div>

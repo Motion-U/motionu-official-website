@@ -81,6 +81,7 @@ export default function page() {
                 }
                 image={"/images/mallam.png"}
                 link={"https://mallam.chat/"}
+                credit={"Quddus"}
               />
               <ProjectPostCard
                 title={
@@ -91,6 +92,7 @@ export default function page() {
                   "ProReg is an application that can help IIUM students to schedule their courses timetable. Available both in web and mobile application"
                 }
                 link={"https://proreg.vercel.app/"}
+                credit={"Forthify"}
               />
               <ProjectPostCard
                 title={"IIUM Schedule : Schedule Your Timetable Seamlessly"}
@@ -99,6 +101,18 @@ export default function page() {
                 }
                 image={"/images/iiumschedule.png"}
                 link={"https://iiumschedule.vercel.app/"}
+                credit={"Fareez Ikmal"}
+              />
+              <ProjectPostCard
+                title={
+                  "Malaysia Prayer Time Mobile Apps : An Essential Prayer App for Muslims"
+                }
+                description={
+                  "Malaysia Prayer Time is a mobile application that can help Muslim know their prayer schedule"
+                }
+                image={"/images/malaysiaprayertime.png"}
+                link={"https://waktusolat.app/en"}
+                credit={"Fareez Ikmal"}
               />
             </div>
           </div>
