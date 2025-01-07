@@ -80,7 +80,7 @@ export default function about() {
       </div>
 
       <div className="text-center mt-16 bg-gradient-to-br from-sky-300 via-white to-sky-200 w-full py-10">
-        <Heading text={"Motion-U Club Members 2023/2024"}></Heading>
+        <Heading text={"Motion-U Club Members 2024/2025"}></Heading>
         <div className="flex justify-center mt-5 mx-5">
           <Image
             src="/images/org_chart.png"
