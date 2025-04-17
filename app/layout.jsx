@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <body
           className={`${inter.className} overflow-x-hidden relative max-w-[100vw]`}
         >
-          <Alert />
+          {/* <Alert /> */}
           <Header />
           {children}
           {/* <Footer /> */}
