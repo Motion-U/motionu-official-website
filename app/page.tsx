@@ -11,12 +11,14 @@ import {
   FaCampground,
   FaBookReader,
   FaTrophy,
+  FaArrowRight,
 } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import activities from "@/data/activities.json";
 import perks from "@/data/perks.json";
 import collaborators from "@/data/collaborators.json";
 import projects from "@/data/projects.json";
+import Link from "next/link";
 
 // Icon map for activities
 const iconMap: Record<string, React.ReactNode> = {
@@ -37,7 +39,7 @@ export default function HomePage() {
       {/* ── Activities ── */}
       <section
         id="activities"
-        className="relative z-[1] py-[100px] px-[max(24px,8vw)]"
+        className="relative z-[1] py-[60px] md:py-[100px] px-[max(24px,8vw)]"
       >
         <div className="section-header flex items-end justify-between flex-wrap gap-5 mb-12">
           <div>
@@ -72,7 +74,7 @@ export default function HomePage() {
       {/* ── Featured Projects ── */}
       <section
         id="projects"
-        className="relative z-[1] pt-5 pb-[100px] px-[max(24px,8vw)]"
+        className="relative z-[1] pt-5 pb-[60px] md:pb-[100px] px-[max(24px,8vw)]"
       >
         <div className="flex items-end justify-between flex-wrap gap-5 mb-12">
           <div>
@@ -85,18 +87,43 @@ export default function HomePage() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, i) => (
+          {projects.slice(0, 5).map((p, i) => (
             <ScrollReveal key={p.title} staggerIndex={i}>
               <ProjectPostCard {...p} />
             </ScrollReveal>
           ))}
+
+          {/* View All card */}
+          <ScrollReveal staggerIndex={5}>
+            <Link
+              href="/projects"
+              className="block relative overflow-hidden bg-surface-card border border-outline rounded-[20px] no-underline cursor-pointer transition-all duration-200 hover:border-outline-accent hover:-translate-y-1 hover:shadow-card h-full"
+            >
+              <div className="w-full aspect-[16/10] bg-surface-elevated relative overflow-hidden flex items-center justify-center">
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center text-2xl transition-transform duration-200 group-hover:scale-110"
+                  style={{ background: "var(--icon-blue)" }}
+                >
+                  <FaArrowRight className="text-brand-light" />
+                </div>
+              </div>
+              <div className="p-5 pb-6 text-center">
+                <h3 className="font-display text-lg font-semibold text-content-primary mb-1.5">
+                  View All Projects
+                </h3>
+                <p className="text-sm text-content-secondary leading-relaxed">
+                  Explore everything built by our community.
+                </p>
+              </div>
+            </Link>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* ── Membership Perks ── */}
       <section
         id="perks"
-        className="relative z-[1] pt-5 pb-[100px] px-[max(24px,8vw)]"
+        className="relative z-[1] pt-5 pb-[60px] md:pb-[100px] px-[max(24px,8vw)]"
       >
         <div className="flex items-end justify-between flex-wrap gap-5 mb-12">
           <div>

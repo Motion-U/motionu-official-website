@@ -59,7 +59,7 @@ export default async function NewsDetail({ params }: Props) {
   };
 
   return (
-    <main className="relative z-[1] mx-10 lg:mx-72 my-10 text-justify">
+    <main className="relative z-[1] px-[max(24px,5vw)] md:mx-10 lg:mx-72 my-10 text-justify">
       <div className="text-content-muted text-sm mb-4">{date}</div>
       {documentToReactComponents(
         document as Parameters<typeof documentToReactComponents>[0],
@@ -68,7 +68,7 @@ export default async function NewsDetail({ params }: Props) {
       {imageUrl && (
         <img
           src={imageUrl}
-          className="w-1/2 mx-auto rounded-[14px]"
+          className="w-full md:w-1/2 mx-auto rounded-[14px]"
           alt=""
         />
       )}

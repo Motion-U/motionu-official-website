@@ -1,26 +1,26 @@
 [
   {
-    "title": "Mallam Chat",
-    "description": "The easiest way to chat with Malaysian AI. Mallam is the ChatGPT for Malaysian where it can understand Bahasa Melayu and respond in Bahasa Melayu.",
-    "image": "/images/mallam.png",
-    "link": "https://beta.mallam.chat/",
-    "credit": "Quddus",
+    "title": "Athena",
+    "description": "Motion-U AI — the first club to ever have its own AI assistant. Ask Athena anything, and she’ll guide you through the entire Motion-U ecosystem.",
+    "image": "/images/athena.png",
+    "link": "https://athena.motionukict.com/",
+    "credit": "Kaiden-A",
     "tag": "AI Chat"
   },
   {
-    "title": "Simplified iMa'luum",
-    "description": "Tired of old-design iMa'luum? Try the new unofficial iMa'luum that looks much cooler and much more feature-rich!",
-    "image": "/images/imaalum.png",
-    "link": "https://imaluum.nrmnqdds.com/",
-    "credit": "Quddus",
+    "title": "Ramadhan With Motion-U",
+    "description": "A comprehensive companion for your Ramadhan goals. Track your progress, find daily wisdom, and strengthen your connection.",
+    "image": "/images/ramadhan.png",
+    "link": "https://ramadhan.motionukict.com/",
+    "credit": "Kaiden-A",
     "tag": "Web App"
   },
   {
-    "title": "ProReg",
-    "description": "ProReg is an application that can help IIUM students to schedule their courses timetable. Available both in web and mobile.",
-    "image": "/images/proreg.png",
-    "link": "https://proreg.vercel.app/",
-    "credit": "Forthify",
+    "title": "Motion-U API",
+    "description": "Motion-U API is a unified API service designed to encourage a strong developer culture within the Motion-U committee. With a single API key, Motion-U members gain access to all Motion-U systems through one centralized platform.",
+    "image": "/images/api.png",
+    "link": "https://api.motionukict.com/",
+    "credit": "Kaiden-A",
     "tag": "Tool"
   },
   {

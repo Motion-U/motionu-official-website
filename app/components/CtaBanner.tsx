@@ -4,7 +4,7 @@ import siteConfig from "@/data/site-config.json";
 export default function CtaBanner() {
   return (
     <div
-      className="relative z-[1] mx-[max(24px,8vw)] mb-[100px] mt-0 rounded-[20px] overflow-hidden border border-outline-accent p-[72px_max(32px,6vw)] flex flex-col items-center text-center gap-6"
+      className="relative z-[1] mx-[max(24px,8vw)] mb-[60px] md:mb-[100px] mt-0 rounded-[20px] overflow-hidden border border-outline-accent p-[40px_max(24px,6vw)] md:p-[72px_max(32px,6vw)] flex flex-col items-center text-center gap-5 md:gap-6"
       style={{
         background:
           "linear-gradient(135deg, rgba(14,165,233,0.08) 0%, rgba(99,102,241,0.06) 100%)",

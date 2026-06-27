@@ -2,7 +2,7 @@ import siteConfig from "@/data/site-config.json";
 
 export default function HeroText() {
   return (
-    <div className="relative z-[1] min-h-[calc(100vh-64px)] flex flex-col items-center justify-center text-center px-[max(24px,8vw)] pt-20 pb-[100px]">
+    <div className="relative z-[1] min-h-[calc(100vh-56px)] md:min-h-[calc(100vh-64px)] flex flex-col items-center justify-center text-center px-[max(24px,8vw)] pt-16 md:pt-20 pb-[60px] md:pb-[100px]">
       {/* Eyebrow badge */}
       <div
         className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.12em] uppercase text-brand-light px-4 py-1.5 rounded-full mb-8"
@@ -38,7 +38,7 @@ export default function HeroText() {
 
       {/* CTAs */}
       <div
-        className="mt-10 flex flex-wrap gap-3 justify-center"
+        className="mt-8 md:mt-10 flex flex-wrap gap-3 justify-center w-full max-w-[400px] md:max-w-none"
         style={{ animation: "fadeUp 0.6s 0.3s ease both" }}
       >
         <a
@@ -63,13 +63,13 @@ export default function HeroText() {
 
       {/* Stats */}
       <div
-        className="mt-[72px] flex flex-wrap gap-x-12 gap-y-6 justify-center"
+        className="mt-[48px] md:mt-[72px] grid grid-cols-2 md:flex md:flex-wrap gap-x-8 md:gap-x-12 gap-y-5 md:gap-y-6 justify-center"
         style={{ animation: "fadeUp 0.6s 0.4s ease both" }}
       >
         {siteConfig.heroStats.map((stat, i) => (
           <div key={stat.label} className="flex items-center gap-x-12 gap-y-0">
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-content-primary leading-none">
+              <div className="font-display text-2xl md:text-3xl font-bold text-content-primary leading-none">
                 {stat.value}
                 <span className="text-brand-light">{stat.suffix}</span>
               </div>

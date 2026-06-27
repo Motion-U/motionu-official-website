@@ -4,7 +4,7 @@ import siteConfig from "@/data/site-config.json";
 export default function ContactPage() {
   return (
     <main className="relative z-[1]">
-      <section className="flex flex-col flex-grow min-h-screen lg:mx-40 px-[max(24px,5vw)] py-16">
+      <section className="flex flex-col flex-grow min-h-[70vh] md:min-h-screen px-[max(24px,5vw)] py-10 md:py-16">
         <span className="inline-block text-xs font-semibold tracking-[0.1em] uppercase text-brand-light mb-3">
           Get In Touch
         </span>
@@ -12,7 +12,7 @@ export default function ContactPage() {
           Contact us!
         </h1>
 
-        <div className="lg:w-1/2 space-y-0">
+        <div className="w-full lg:w-1/2 space-y-0">
           <div className="flex justify-between items-center py-6">
             <p className="font-semibold text-content-primary">Address</p>
             <p className="text-right text-content-secondary max-w-[50%]">
