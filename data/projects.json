@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Athena",
+    "description": "Motion-U AI — the first club to ever have its own AI assistant. Ask Athena anything, and she’ll guide you through the entire Motion-U ecosystem.",
+    "image": "/images/athena.png",
+    "link": "https://athena.motionukict.com/",
+    "credit": "Kaiden-A",
+    "tag": "AI Chat"
+  },
+  {
+    "title": "Motion-U API",
+    "description": "Motion-U API is a unified API service designed to encourage a strong developer culture within the Motion-U committee. With a single API key, Motion-U members gain access to all Motion-U systems through one centralized platform.",
+    "image": "/images/api.png",
+    "link": "https://api.motionukict.com/",
+    "credit": "Kaiden-A",
+    "tag": "Tool"
+  },
+  {
+    "title": "CFS in Touch",
+    "description": "CFS in Touch is one of Motion-U programs that helps our foundation students prepared for real world of software engineering.",
+    "image": "/images/cfsintouch.png",
+    "link": "https://cfsintouch.motionukict.com/",
+    "credit": "Kaiden-A",
+    "tag": "Web App"
+  },
+  {
+    "title": "CodeDojo Website",
+    "description": "CodeDojo is an initiative by Motion-U designed to help members grow into better developers through hands-on practice, problem-solving, and real-world projects..",
+    "image": "/images/codedojo.png",
+    "link": "https://codedojo.motionukict.com",
+    "credit": "Kaiden-A, Yusuf, Hakimchi",
+    "tag": "Web App"
+  },
+  {
+    "title" : "MFSH website",
+    "description" : "Modern Full-Stack Hero (MFSH) is a beginner-friendly workshop designed to introduce students to every aspect of web development, including front-end and back-end development.",
+    "image" : "/images/mfsh.png",
+    "link" : "https://mfsh.motionukict.com/",
+    "credit" : "Kaiden-A",
+    "tag" : "Web App"
+  },
+  {
+    "title" : "Neurena",
+    "description" : "Neurena is a web application inspired by Plato, but with a modern twist. It brings Athena and Neura together, bridging the wisdom of the past with the boundless possibilities of the future—where philosophy meets the age of space and intelligence.",
+    "image" : "/images/neurena.png",
+    "link" : "https://neurena.motionukict.com/",
+    "credit":"Kaiden-A",
+    "tag" : "Game"
+
+  },
+  {
+    "title" : "Neuradmin",
+    "description" : "Neuradmin is one of Motion-U products that part of Motion-U ecosystem, Neuradmin are platform that use to organize and manage athena and neura knowledge making sure our AI assistant have the latest knowledge about Motion-U.",
+    "image" : "/images/neuradmin.png",
+    "link" : "https://neuradmin.vercel.app/",
+    "credit" : "Kaiden-A",
+    "tag" : "Tool"
+ 
+  },
+  {
+    "title": "Ramadhan With Motion-U",
+    "description": "A comprehensive companion for your Ramadhan goals. Track your progress, find daily wisdom, and strengthen your connection.",
+    "image": "/images/ramadhan.png",
+    "link": "https://ramadhan.motionukict.com/",
+    "credit": "Kaiden-A",
+    "tag": "Web App"
+  }
+]
