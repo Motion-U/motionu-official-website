@@ -1,4 +1,4 @@
-import { siteConfig } from "@/data/site-config";
+import siteConfig from "@/data/site-config.json";
 
 export default function HeroText() {
   return (

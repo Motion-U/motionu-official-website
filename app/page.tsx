@@ -13,9 +13,10 @@ import {
   FaTrophy,
 } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
-import { activities } from "@/data/activities";
-import { perks } from "@/data/perks";
-import { collaborators } from "@/data/collaborators";
+import activities from "@/data/activities.json";
+import perks from "@/data/perks.json";
+import collaborators from "@/data/collaborators.json";
+import projects from "@/data/projects.json";
 
 // Icon map for activities
 const iconMap: Record<string, React.ReactNode> = {
@@ -26,55 +27,6 @@ const iconMap: Record<string, React.ReactNode> = {
   "Study Group": <FaBookReader />,
   Community: <FaPeopleGroup />,
 };
-
-// Projects (static — will merge with Contentful CMS later)
-const projects = [
-  {
-    title: "Mallam Chat",
-    description:
-      "The easiest way to chat with Malaysian AI. Mallam is the ChatGPT for Malaysian where it can understand Bahasa Melayu and respond in Bahasa Melayu.",
-    image: "/images/mallam.png",
-    link: "https://beta.mallam.chat/",
-    credit: "Quddus",
-    tag: "AI Chat",
-  },
-  {
-    title: "Simplified iMa'luum",
-    description:
-      "Tired of old-design iMa'luum? Try the new unofficial iMa'luum that looks much cooler and much more feature-rich!",
-    image: "/images/imaalum.png",
-    link: "https://imaluum.nrmnqdds.com/",
-    credit: "Quddus",
-    tag: "Web App",
-  },
-  {
-    title: "ProReg",
-    description:
-      "ProReg is an application that can help IIUM students to schedule their courses timetable. Available both in web and mobile.",
-    image: "/images/proreg.png",
-    link: "https://proreg.vercel.app/",
-    credit: "Forthify",
-    tag: "Tool",
-  },
-  {
-    title: "IIUM Schedule",
-    description:
-      "IIUM Schedule is an application that can help IIUM students to schedule their courses timetable seamlessly.",
-    image: "/images/iiumschedule.png",
-    link: "https://iiumschedule.vercel.app/",
-    credit: "Fareez Ikmal",
-    tag: "Tool",
-  },
-  {
-    title: "Malaysia Prayer Time",
-    description:
-      "Malaysia Prayer Time is a mobile application that can help Muslims know their prayer schedule.",
-    image: "/images/malaysiaprayertime.png",
-    link: "https://waktusolat.app/en",
-    credit: "Fareez Ikmal",
-    tag: "Mobile",
-  },
-];
 
 export default function HomePage() {
   return (
@@ -110,7 +62,7 @@ export default function HomePage() {
                 icon={iconMap[a.title] ?? null}
                 title={a.title}
                 description={a.description}
-                iconColor={a.iconColor}
+                iconColor={a.iconColor as "blue" | "cyan" | "emerald" | "rose" | "amber" | "indigo"}
               />
             </ScrollReveal>
           ))}

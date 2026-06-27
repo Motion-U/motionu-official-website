@@ -1,5 +1,1 @@
-"use client";
-
-import { Dialog } from "@material-tailwind/react";
-
-export { Dialog };
+// DEAD CODE — Former Dialog re-export. Safe to delete this file.

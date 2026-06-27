@@ -4,13 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/news", label: "News" },
-  { href: "/contact", label: "Contact" },
-];
+import navLinks from "@/data/navigation.json";
+import siteConfig from "@/data/site-config.json";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,7 +30,7 @@ export default function Header() {
         className="font-display font-bold text-lg text-content-primary no-underline flex items-center gap-2"
       >
         <Image src="/images/motionu.png" width={28} height={28} alt="Motion-U" />
-        Motion-U
+        {siteConfig.clubName}
       </Link>
 
       {/* Desktop links */}
@@ -56,7 +51,7 @@ export default function Header() {
       <div className="flex items-center gap-2.5">
         <ThemeToggle />
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeyWcBSC_SNrjW5dA7J3dNYtZlb6NRC0YiXR3aN1LiVDfsbMw/viewform"
+          href={siteConfig.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:inline-flex items-center gap-2 font-display text-sm font-semibold text-white px-5 py-2 rounded-sm no-underline transition-transform duration-200 hover:-translate-y-px"

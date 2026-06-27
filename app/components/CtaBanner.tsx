@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig } from "@/data/site-config";
+import siteConfig from "@/data/site-config.json";
 
 export default function CtaBanner() {
   return (

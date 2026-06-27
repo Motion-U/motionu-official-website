@@ -1,5 +1,5 @@
 import { FaInstagram, FaTiktok, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { siteConfig } from "@/data/site-config";
+import siteConfig from "@/data/site-config.json";
 
 export default function ContactPage() {
   return (
