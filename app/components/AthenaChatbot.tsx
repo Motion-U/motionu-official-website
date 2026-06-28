@@ -14,15 +14,14 @@ interface ChatMessage {
   content: string;
 }
 
-interface ApiResponse {
-  success: boolean;
-  reply: ChatMessage;
-  timestamp: string;
-  metadata: {
-    model: string;
-    processingTimeMs: number;
-    requestLength: number;
-  };
+/* ───────────────────────────────────────────
+   Helper — serialise message history as a
+   conversation string for the backend
+   ─────────────────────────────────────────── */
+function buildHistory(messages: ChatMessage[]): string {
+  return messages
+    .map((m) => `${m.role === "user" ? "User" : "Assistant"}: ${m.content}`)
+    .join("\n");
 }
 
 /* ───────────────────────────────────────────
@@ -76,13 +75,17 @@ export default function AthenaChatbot() {
       const res = await fetch("/api/ask/athena", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: trimmed }),
+        body: JSON.stringify({
+          question: trimmed,
+          history: buildHistory(messages),
+        }),
       });
 
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-      const data: ApiResponse = await res.json();
-      setMessages((prev) => [...prev, data.reply]);
+      const data = await res.json();
+      const assistantMsg: ChatMessage = { role: "assistant", content: data.answer ?? "" };
+      setMessages((prev) => [...prev, assistantMsg]);
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Something went wrong"

@@ -1,33 +1,39 @@
 import { NextResponse } from "next/server";
+import axios from 'axios';
 
-export async function POST(request: Request) {
-  // Simulate network latency (300–800ms) so the UI loading states are testable
-  const delay = Math.floor(Math.random() * 500) + 300;
-  await new Promise((r) => setTimeout(r, delay));
+const backendUrl = 'https://api.motionukict.com';
 
-  let userMessage = "";
-  try {
-    const body = await request.json();
-    userMessage = body?.message ?? "";
-  } catch {
-    // If body parsing fails, still return the fallback reply
-  }
+export async function POST(request : Request){
 
-  const now = new Date().toISOString();
-  const processingTimeMs = Math.round(delay * 1.4);
+    try {
+        const body = await request.json();
+        const { question, history, top_k } = body;
 
-  return NextResponse.json({
-    success: true,
-    reply: {
-      role: "assistant",
-      content:
-        "Athena is not available right now.\n\nPlease visit **[athena.motionukict.com](https://athena.motionukict.com)** to chat with Athena.",
-    },
-    timestamp: now,
-    metadata: {
-      model: "athena-mock-v1",
-      processingTimeMs,
-      requestLength: userMessage.length,
-    },
-  });
+        const payload = {
+            question: question, 
+            history : history || "",
+            top_k: top_k || 5
+        };
+
+        const res = await axios.post(
+            `${backendUrl}/api/v1/rag/questions/athena`, 
+            payload, 
+            {
+                headers : {
+                    'x-motionu-key' : process.env.MOTIONU_API_KEY,
+                    'Content-Type': 'application/json'
+                }
+            }
+        );
+
+        return NextResponse.json({ answer: res.data.answer }, { status: 201 });
+
+    } catch(err : any) {
+        console.error("API Error:", err.response?.data || err.message);
+
+        return NextResponse.json(
+            { error: "Failed to fetch response from Athena" }, 
+            { status: err.response?.status || 500 }
+        );
+    }
 }
