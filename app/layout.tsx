@@ -5,6 +5,7 @@ import ThemeProvider from "./components/ThemeProvider";
 import "./design-tokens.css";
 import Header from "./components/Header";
 import FooterNew from "./components/footer-new";
+import AthenaChatbot from "./components/AthenaChatbot";
 import "./globals.css";
 
 const inter = Inter({
@@ -61,6 +62,7 @@ export default function RootLayout({
           <Header />
           {children}
           <FooterNew />
+          <AthenaChatbot />
         </ThemeProvider>
       </body>
     </html>

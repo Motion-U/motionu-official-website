@@ -16,12 +16,14 @@
     "tag": "Tool"
   },
   {
-    "title": "CFS in Touch",
-    "description": "CFS in Touch is one of Motion-U programs that helps our foundation students prepared for real world of software engineering.",
-    "image": "/images/cfsintouch.png",
-    "link": "https://cfsintouch.motionukict.com/",
-    "credit": "Kaiden-A",
-    "tag": "Web App"
+
+    "title" : "Certify",
+    "description" : "A Bulk Certificates Generator, No more manual labor.",
+    "image" : "/images/certify.png",
+    "link" : "https://certify-motion-u.vercel.app/",
+    "credit" : "Kaiden-A",
+    "tag" : "Tool"
+
   },
   {
     "title": "CodeDojo Website",
@@ -38,6 +40,14 @@
     "link" : "https://mfsh.motionukict.com/",
     "credit" : "Kaiden-A",
     "tag" : "Web App"
+  },
+    {
+    "title": "CFS in Touch",
+    "description": "CFS in Touch is one of Motion-U programs that helps our foundation students prepared for real world of software engineering.",
+    "image": "/images/cfsintouch.png",
+    "link": "https://cfsintouch.motionukict.com/",
+    "credit": "Kaiden-A",
+    "tag": "Web App"
   },
   {
     "title" : "Neurena",
