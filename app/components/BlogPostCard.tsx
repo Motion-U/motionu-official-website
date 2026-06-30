@@ -16,7 +16,8 @@ export default function BlogPostCard({
   desc,
   image,
 }: Props) {
-  const imageUrl = `https:${image}`;
+  // Support both Contentful (starts with //) and local (/images/...) paths
+  const imageUrl = image.startsWith("//") ? `https:${image}` : image;
   return (
     <a href={`/news/${keyId}`} className="hover:opacity-95">
       <div className="bg-surface-card border border-outline rounded-[20px] overflow-hidden transition-all duration-200 hover:border-outline-accent hover:-translate-y-1 hover:shadow-card">
