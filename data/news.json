@@ -1,0 +1,150 @@
+[
+  {
+    "id": "codedojo-2026-kickoff",
+    "title": "CodeDojo 2026: Level Up Your Coding Skills",
+    "date": "14 June 2026",
+    "description": "CodeDojo returns for 2026 with an exciting new curriculum. From algorithms to full-stack projects — this is where Motion-U members become real developers.",
+    "image": "/images/codedojo.png",
+    "category": "Event",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "CodeDojo is back! After the overwhelming success of last year's sessions, Motion-U is launching CodeDojo 2026 — a structured programme designed to take members from foundational coding concepts to building real-world, deployable applications."
+      },
+      {
+        "type": "heading",
+        "text": "What's New This Year?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The 2026 curriculum introduces three new tracks: Web Fundamentals (HTML, CSS, JavaScript), Modern Frontend (React, Tailwind, Next.js), and API Development (Node.js, Express, database integration). Each track runs for 6 weeks with weekly hands-on sessions and a capstone project."
+      },
+      {
+        "type": "paragraph",
+        "text": "What hasn't changed is the community-first approach. Every session includes pair programming, code reviews by senior members, and an open Slack channel for questions at any hour. You're never coding alone."
+      },
+      {
+        "type": "heading",
+        "text": "How to Join"
+      },
+      {
+        "type": "paragraph",
+        "text": "CodeDojo 2026 is open exclusively to Motion-U members. Sessions begin on 28 June 2026, every Friday at 3 PM in the KICT lab. Bring your laptop, your curiosity, and at least one specific project goal you want to achieve by the end of the programme."
+      },
+      {
+        "type": "paragraph",
+        "text": "Spots are limited to 30 participants per track to keep mentor ratios healthy. Register through the Motion-U portal — first come, first served."
+      }
+    ]
+  },
+  {
+    "id": "athena-ai-new-features",
+    "title": "Athena Just Got Smarter: New Features Drop",
+    "date": "2 June 2026",
+    "description": "Motion-U's AI assistant Athena now answers from an expanded knowledge base, supports follow-up questions, and helps with academic queries too.",
+    "image": "/images/athena.png",
+    "category": "Product",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Athena, Motion-U's very own AI assistant, has received a major update. If you haven't talked to her lately — now is the time. Built by club members and powered by the latest language models, Athena is designed to be your first stop for anything Motion-U."
+      },
+      {
+        "type": "heading",
+        "text": "What Changed"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most visible improvement: Athena now handles multi-turn conversations. You can ask a follow-up question and she remembers context — no more repeating yourself. Her knowledge base has also grown beyond Motion-U specifics to include general academic guidance, study tips, and programming help."
+      },
+      {
+        "type": "paragraph",
+        "text": "Under the hood, the team has reworked the retrieval pipeline to cut response time by nearly half. Answers feel snappier, the tone is warmer, and she's now available 24/7 at athena.motionukict.com."
+      },
+      {
+        "type": "heading",
+        "text": "Built by Members, for Members"
+      },
+      {
+        "type": "paragraph",
+        "text": "What makes Athena special isn't the technology — it's that she was built by fellow Motion-U members. The project started as a hackathon idea two semesters ago and has grown into one of the club's flagship products. Every feature you see today was designed by students who learned to build it as they went. That alone should tell you what joining this club can unlock."
+      }
+    ]
+  },
+  {
+    "id": "mfsh-workshop-recap",
+    "title": "MFSH 2026: A Weekend of Full-Stack Building",
+    "date": "18 May 2026",
+    "description": "Over 60 students spent an intensive weekend building full-stack applications from scratch. Here's what happened at Modern Full-Stack Hero 2026.",
+    "image": "/images/mfsh.png",
+    "category": "Event",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Modern Full-Stack Hero (MFSH) 2026 wrapped last weekend, and by every measure it was our biggest workshop yet. Over 60 participants from across IIUM spent two days building a complete web application — frontend, backend, database, and deployment — guided by Motion-U senior members."
+      },
+      {
+        "type": "heading",
+        "text": "The Format"
+      },
+      {
+        "type": "paragraph",
+        "text": "Day One kicked off with the fundamentals: setting up a Next.js project, designing a PostgreSQL schema, and wiring up API routes. By lunch, teams had live dashboards showing real data. Day Two focused on authentication, file uploads, and deployment to Vercel. By the closing session, every team had a working app they could share with a URL."
+      },
+      {
+        "type": "paragraph",
+        "text": "The energy in the room was electric. People stayed past 7 PM both days, not because they had to — because they didn't want to stop."
+      },
+      {
+        "type": "heading",
+        "text": "What Participants Said"
+      },
+      {
+        "type": "blockquote",
+        "text": "\"I came in knowing only HTML and CSS. I left with a deployed app on Vercel. The mentors made everything click.\" — Aisyah, first-year CS"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you missed MFSH 2026, don't worry — we run it every semester. Keep an eye on the #events channel in Slack for the next edition. And if you're ready to start building right now, CodeDojo sessions are already running."
+      }
+    ]
+  },
+  {
+    "id": "motion-u-membership-drive",
+    "title": "Join Motion-U: Semester 1 Membership Drive Opens",
+    "date": "1 April 2026",
+    "description": "Applications are now open for new Motion-U members. Join Malaysia's most active university tech club and start building your portfolio.",
+    "image": "/images/motionu.png",
+    "category": "Announcement",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "The wait is over. Motion-U is now accepting applications for new members for Semester 1 of the 2026/2027 academic year. If you're passionate about technology, entrepreneurship, or simply want to be around people who build things — this is your moment."
+      },
+      {
+        "type": "heading",
+        "text": "Why Join?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Motion-U isn't a typical club. You won't sit through lectures about \"leadership skills\" — you'll ship real products that real people use. Athena, Certify, Neurena, CodeDojo — every project in our portfolio was started by a member who had an idea and found a team to build it inside this club."
+      },
+      {
+        "type": "paragraph",
+        "text": "Members get access to exclusive workshops, mentorship from senior developers, the club's private API infrastructure, and a network of builders who push each other to get better."
+      },
+      {
+        "type": "heading",
+        "text": "How to Apply"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fill out the application form linked on our homepage. There's no strict GPA requirement — we care about what you want to build, not your transcript. Applications close on 30 April 2026. Shortlisted candidates will be invited for a brief casual chat with the committee."
+      },
+      {
+        "type": "paragraph",
+        "text": "Spaces fill fast. Apply early."
+      }
+    ]
+  }
+]
