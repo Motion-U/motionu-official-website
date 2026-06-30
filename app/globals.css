@@ -1,6 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ═══════════════════════════════════════════════
+   Tailwind CSS v4 — import + theme
+   ═══════════════════════════════════════════════ */
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
+  --color-brand-cyan: var(--brand-cyan);
+  --color-brand-indigo: var(--brand-indigo);
+
+  --color-surface-base: var(--bg-base);
+  --color-surface-elevated: var(--bg-surface);
+  --color-surface-card: var(--bg-card);
+  --color-surface-card-hover: var(--bg-card-hover);
+  --color-surface-nav: var(--bg-nav);
+
+  --color-content-primary: var(--text-primary);
+  --color-content-secondary: var(--text-secondary);
+  --color-content-muted: var(--text-muted);
+
+  --color-outline: var(--border);
+  --color-outline-accent: var(--border-accent);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --shadow-card: var(--shadow-card);
+}
 
 /* Force body to use tokens */
 body {
