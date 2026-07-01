@@ -1,24 +1,9 @@
 import ProjectPostCard from "@/app/components/ProjectPostCard";
 import ScrollReveal from "@/app/components/ScrollReveal";
+import projects from "@/data/projects.json";
 import Link from "next/link";
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "@/keystatic.config";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-
-type ProjectEntry = {
-  slug: string;
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  credit: string;
-  tag: string;
-};
-
-export default async function ProjectsPage() {
-  const projects = await fetchProjects();
-
+export default function ProjectsPage() {
   return (
     <main className="relative z-[1]">
       <section className="pt-16 pb-[100px] px-[max(24px,8vw)]">
@@ -52,27 +37,4 @@ export default async function ProjectsPage() {
       </section>
     </main>
   );
-}
-
-async function fetchProjects(): Promise<ProjectEntry[]> {
-  try {
-    const slugs = await reader.collections.projects.list();
-    const entries = await Promise.all(
-      slugs.map(async (slug) => {
-        const entry = await reader.collections.projects.read(slug);
-        return {
-          slug,
-          title: entry?.title ?? "",
-          description: entry?.description ?? "",
-          image: (entry?.image as string) ?? "",
-          link: entry?.link ?? "",
-          credit: entry?.credit ?? "",
-          tag: entry?.tag ?? "Web App",
-        };
-      })
-    );
-    return entries;
-  } catch {
-    return [];
-  }
 }

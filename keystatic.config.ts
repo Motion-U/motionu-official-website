@@ -1,12 +1,5 @@
 import { config, fields, collection } from "@keystatic/core";
 
-const projectTagOptions = [
-  { label: "AI Chat", value: "AI Chat" },
-  { label: "Tool", value: "Tool" },
-  { label: "Web App", value: "Web App" },
-  { label: "Game", value: "Game" },
-] as const;
-
 export default config({
   storage: {
     kind: "github",
@@ -47,30 +40,6 @@ export default config({
         content: fields.mdx({
           label: "Content",
           
-        }),
-      },
-    }),
-    projects: collection({
-      label: "Projects",
-      slugField: "title",
-      path: "content/projects/*",
-      schema: {
-        title: fields.slug({ name: { label: "Title" } }),
-        description: fields.text({
-          label: "Description",
-          multiline: true,
-        }),
-        image: fields.image({
-          label: "Image",
-          directory: "public/images/projects",
-          publicPath: "/images/projects",
-        }),
-        link: fields.url({ label: "Project URL" }),
-        credit: fields.text({ label: "Credit" }),
-        tag: fields.select({
-          label: "Tag",
-          options: projectTagOptions,
-          defaultValue: "Web App",
         }),
       },
     }),
