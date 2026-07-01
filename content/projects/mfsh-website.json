@@ -1,0 +1,10 @@
+{
+  "title": "MFSH Website",
+  "description": "Modern Full-Stack Hero (MFSH) is a beginner-friendly workshop designed to introduce students to every aspect of web development, including front-end and back-end development.",
+  "image": {
+    "filename": "mfsh.png"
+  },
+  "link": "https://mfsh.motionukict.com/",
+  "credit": "Kaiden-A",
+  "tag": "Web App"
+}
