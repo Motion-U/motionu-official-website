@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeProvider from "./components/ThemeProvider";
+import ShellWrapper from "./components/ShellWrapper";
 import "./design-tokens.css";
-import Header from "./components/Header";
-import FooterNew from "./components/footer-new";
-import AthenaChatbot from "./components/AthenaChatbot";
 import "./globals.css";
 
 const inter = Inter({
@@ -58,11 +56,7 @@ export default function RootLayout({
       <body className="font-body bg-surface-base text-content-primary overflow-x-hidden relative max-w-[100vw]">
         <ThemeProvider>
           <Analytics />
-          <div className="mesh-bg" />
-          <Header />
-          {children}
-          <FooterNew />
-          <AthenaChatbot />
+          <ShellWrapper>{children}</ShellWrapper>
         </ThemeProvider>
       </body>
     </html>
