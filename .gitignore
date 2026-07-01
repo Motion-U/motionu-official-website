@@ -38,3 +38,8 @@ next-env.d.ts
 **/.codewhale/*
 !**/.codewhale/constitution.json
 .deepseek/
+
+
+.agents
+skills-lock.json
+docs

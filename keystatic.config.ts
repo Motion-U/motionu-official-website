@@ -2,7 +2,8 @@ import { config, fields, collection } from "@keystatic/core";
 
 export default config({
   storage: {
-    kind: "local",
+    kind: "github",
+    repo : `Motion-U/motionu-official-website`
   },
   collections: {
     news: collection({
@@ -10,7 +11,6 @@ export default config({
       slugField: "title",
       path: "content/news/*",
       format: { contentField: "content" },
-      // 👇 Move it here! This tells Keystatic to give the MDX field center stage in the UI
       entryLayout: "content", 
       schema: {
         title: fields.slug({ name: { label: "Title" } }),
@@ -28,6 +28,7 @@ export default config({
             { label: "Event", value: "Event" },
             { label: "Product", value: "Product" },
             { label: "Announcement", value: "Announcement" },
+            {label: "Story" , value : "Story"}
           ],
           defaultValue: "Event",
         }),
