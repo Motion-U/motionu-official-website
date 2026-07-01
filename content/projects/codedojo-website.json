@@ -1,0 +1,10 @@
+{
+  "title": "CodeDojo Website",
+  "description": "CodeDojo is an initiative by Motion-U designed to help members grow into better developers through hands-on practice, problem-solving, and real-world projects.",
+  "image": {
+    "filename": "codedojo.png"
+  },
+  "link": "https://codedojo.motionukict.com",
+  "credit": "Kaiden-A, Yusuf, Hakimchi",
+  "tag": "Web App"
+}

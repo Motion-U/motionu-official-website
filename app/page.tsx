@@ -17,8 +17,11 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import activities from "@/data/activities.json";
 import perks from "@/data/perks.json";
 import collaborators from "@/data/collaborators.json";
-import projects from "@/data/projects.json";
 import Link from "next/link";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "@/keystatic.config";
+
+const reader = createReader(process.cwd(), keystaticConfig);
 
 // Icon map for activities
 const iconMap: Record<string, React.ReactNode> = {
@@ -30,7 +33,19 @@ const iconMap: Record<string, React.ReactNode> = {
   Community: <FaPeopleGroup />,
 };
 
-export default function HomePage() {
+type ProjectEntry = {
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  credit: string;
+  tag: string;
+};
+
+export default async function HomePage() {
+  const projects = await fetchProjects();
+
   return (
     <main className="relative z-[1]">
       {/* ── Hero ── */}
@@ -177,4 +192,27 @@ export default function HomePage() {
       </section>
     </main>
   );
+}
+
+async function fetchProjects(): Promise<ProjectEntry[]> {
+  try {
+    const slugs = await reader.collections.projects.list();
+    const entries = await Promise.all(
+      slugs.map(async (slug) => {
+        const entry = await reader.collections.projects.read(slug);
+        return {
+          slug,
+          title: entry?.title ?? "",
+          description: entry?.description ?? "",
+          image: (entry?.image as string) ?? "",
+          link: entry?.link ?? "",
+          credit: entry?.credit ?? "",
+          tag: entry?.tag ?? "Web App",
+        };
+      })
+    );
+    return entries;
+  } catch {
+    return [];
+  }
 }
