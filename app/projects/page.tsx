@@ -1,9 +1,22 @@
 import ProjectPostCard from "@/app/components/ProjectPostCard";
 import ScrollReveal from "@/app/components/ScrollReveal";
-import projects from "@/data/projects.json";
 import Link from "next/link";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "@/keystatic.config";
 
-export default function ProjectsPage() {
+const reader = createReader(process.cwd(), keystaticConfig);
+
+export default async function ProjectsPage() {
+  const projectEntries = await reader.collections.projects.all();
+  const projects = projectEntries.map(({ entry }) => ({
+    title: entry.title ?? "",
+    description: entry.description ?? "",
+    image: entry.image ?? "",
+    link: entry.link ?? "",
+    credit: entry.credit ?? "",
+    tag: entry.tag ?? "Web App",
+  }));
+
   return (
     <main className="relative z-[1]">
       <section className="pt-16 pb-[100px] px-[max(24px,8vw)]">

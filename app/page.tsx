@@ -17,8 +17,11 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import activities from "@/data/activities.json";
 import perks from "@/data/perks.json";
 import collaborators from "@/data/collaborators.json";
-import projects from "@/data/projects.json";
 import Link from "next/link";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "@/keystatic.config";
+
+const reader = createReader(process.cwd(), keystaticConfig);
 
 // Icon map for activities
 const iconMap: Record<string, React.ReactNode> = {
@@ -30,7 +33,17 @@ const iconMap: Record<string, React.ReactNode> = {
   Community: <FaPeopleGroup />,
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const projectEntries = await reader.collections.projects.all();
+  const projects = projectEntries.map(({ entry }) => ({
+    title: entry.title ?? "",
+    description: entry.description ?? "",
+    image: entry.image ?? "",
+    link: entry.link ?? "",
+    credit: entry.credit ?? "",
+    tag: entry.tag ?? "Web App",
+  }));
+
   return (
     <main className="relative z-[1]">
       {/* ── Hero ── */}

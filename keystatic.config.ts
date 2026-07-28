@@ -43,5 +43,43 @@ export default config({
         }),
       },
     }),
+    projects: collection({
+      label: "Projects",
+      slugField: "title",
+      path: "content/projects/*",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Title" } }),
+        description: fields.text({
+          label: "Description",
+          multiline: true,
+        }),
+        image: fields.image({
+          label: "Image",
+          directory: "public/images/projects",
+          publicPath: "/images/projects",
+        }),
+        link: fields.text({
+          label: "Project Link",
+          description: "External URL (opens in new tab)",
+        }),
+        credit: fields.text({
+          label: "Credit",
+          description: "Who built or maintains this project",
+        }),
+        tag: fields.select({
+          label: "Tag",
+          options: [
+            { label: "AI Chat", value: "AI Chat" },
+            { label: "Web App", value: "Web App" },
+            { label: "Tool", value: "Tool" },
+            { label: "Dashboard", value: "Dashboard" },
+            { label: "Platform", value: "Platform" },
+            { label: "Game", value: "Game" },
+          ],
+          defaultValue: "Web App",
+        }),
+      },
+    }),
   },
 });
