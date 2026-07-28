@@ -310,7 +310,7 @@ export default function AthenaChatbot() {
 
           {/* Error */}
           {error && (
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-2 px-4">
               <p
                 className="text-xs px-3 py-1.5 rounded-lg"
                 style={{
@@ -318,8 +318,17 @@ export default function AthenaChatbot() {
                   color: "#fb7185",
                 }}
               >
-                {error} — try again
+                Sorry, there&apos;s a problem — {error}
               </p>
+              <a
+                href="https://athena.motionukict.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs px-4 py-2 rounded-lg font-medium transition-opacity hover:opacity-80"
+                style={{ background: "var(--brand)", color: "#fff" }}
+              >
+                Try Athena at athena.motionukict.com →
+              </a>
             </div>
           )}
 
