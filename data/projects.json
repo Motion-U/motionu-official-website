@@ -26,6 +26,14 @@
 
   },
   {
+    "title" : "Links Shorterner and Analytics",
+    "description" : "Motion-U Links is a branded URL shortener and analytics platform that helps you create clean, shareable links while tracking clicks, traffic sources, devices, locations, and campaign performance—all from one simple dashboard.",
+    "image" : "/image/links.png",
+    "link" : "links.motionukict.com",
+    "credit" : "Kaiden-A",
+    "tag" : "Tool"
+  },
+  {
     "title": "CodeDojo Website",
     "description": "CodeDojo is an initiative by Motion-U designed to help members grow into better developers through hands-on practice, problem-solving, and real-world projects..",
     "image": "/images/codedojo.png",
